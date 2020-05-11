@@ -3,6 +3,7 @@ from PySide2.QtCore import *
 from PySide2.QtGui import *
 from PySide2.QtWidgets import QApplication,QDialog,QPushButton
 
+# https://drchicken.tistory.com/78
 class Main(QDialog):
     def __init__(self):
         super(Main, self).__init__()
@@ -35,7 +36,7 @@ class Main(QDialog):
         self.closeBtn.setGeometry(368,0,32,32)
         self.closeBtn.setFlat(True)
         self.closeBtn.setStyleSheet('QPushButton{background-color: rgba(0,0,0,0.0)}')
-        self.closeBtn.setIcon(QIcon('pyside2/img/close.png'))
+        self.closeBtn.setIcon(QIcon('../img/close.png'))
         self.closeBtn.setIconSize(QSize(13,13))
         self.closeBtn.clicked.connect(QCoreApplication.instance().quit)
 
