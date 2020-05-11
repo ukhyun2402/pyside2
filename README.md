@@ -1,1 +1,1 @@
-"# pyside2" 
+# pyside2
